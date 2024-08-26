@@ -3,6 +3,7 @@ Install composer in OS
 ### Download this dockerization tool
 
 ### Create Laravel project and add docker configuration to the projectnd 
+
 bash script.sh
 
 ### Launch docker containers for this project
@@ -10,7 +11,9 @@ bash script.sh
 sudo docker compose up -d
 
 ##### Some usefull docker cmds:
+
  sudo docker-compose down -v          / remove all containers and volumes /
+ 
  sudo docker ps -a               / list all containers: stoped and run /
 
 ## Database connection
@@ -20,7 +23,9 @@ Define environmental variables for mysql database connection in .env like in doc
 Enter to the php container (name = project_app) and then run commands as usual
 
 sudo docker exec -it project_app sh
+
 or
+
 sudo docker exec -it project_app bash
 
 php artisan migrate      / run for migration after defining connection variables /
